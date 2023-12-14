@@ -1,0 +1,26 @@
+.center-container {
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+.buttons {
+    color: var(--eerie-black);
+    background-color: var(--steel-blue);
+    height: 40px;
+    border: noned;
+    text-align: center;
+    padding: 8px 15px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    border-width: 0;
+}
+#splash {
+    font-family: "JetBrains Mono", monospace;
+    color: white;
+    font-size: 24px;
+}

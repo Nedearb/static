@@ -1,0 +1,46 @@
+@import url("Style.css");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: var(--night);
+  height: 55px;
+  width: 100%;
+}
+.nav-title {
+  display: flex;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+
+  align-items: center;
+}
+.nav-lists {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  align-items: center;
+  list-style: none;
+  margin-right: 40px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+  border-radius: 1em;
+  font-size: larger;
+}
+.nav-list:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-list:hover {
+  background-color: var(--steel-blue);
+  color: black;
+}

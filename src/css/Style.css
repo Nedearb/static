@@ -1,0 +1,14 @@
+:root {
+    --night: #0e1213ff;
+    --eerie-black: #1a2023ff;
+    --steel-blue: #0284d4ff;
+  }
+  .nav-lists {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 400;
+  }
+  .nav-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+  }
+  

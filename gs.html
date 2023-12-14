@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/css/nav.css" />
+  <title>Vertex Games</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="src/Favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="src/Favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="src/Favicons/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <style>
+    body {
+      background-color: var(--eerie-black);
+    }
+  </style>
+  <link rel="stylesheet" href="src/css/games.css" />
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="nav-title">
+      <img src="src/logo.webp" alt="logo" style="border-radius: 25%; height: 100%; width: auto; margin: 0 10px" />
+      <h1>Lorem.</h1>
+    </div>
+    <div class="nav-lists">
+      <div class="nav-list"><a href="index.html">Home</a></div>
+      <div class="nav-list"><a href="gs.html">Games</a></div>
+      <div class="nav-list"><a href="soundboard.html">Soundboard</a></div>
+    </div>
+  </nav>
+  <div class="games-icons"></div>
+  <script>
+    function loadgame(game) {
+      window.location.href = `${game}`
+    }
+    const gamesData = [
+      {
+        name: "Flappy Finch",
+        imageUrl: "src/assets/flappybird/download.jpeg",
+        onClick: function () {
+          loadgame("src/assets/flappybird/");
+        },
+      },
+      {
+        name: "Subway surfers",
+        imageUrl: "src/assets/subway/img/splash.jpg",
+        onClick: function () {
+          loadgame("/src/assets/subway")
+          // Add custom code for Game 2 here
+        },
+      },
+      {
+        name: "Slope",
+        imageUrl: "/src/assets/slope/slope4.jpeg",
+        onClick: function () {
+          loadgame("/src/assets/slope")
+          // Add custom code for Game 2 here
+        },
+      },
+      {
+        name: "Cookie Clicker",
+        imageUrl: "/src/assets/cookieClicker/img/perfectCookie.png",
+        onClick: function () {
+          loadgame("/src/assets/cookieClicker")
+          // Add custom code for Game 2 here
+        },
+      },
+      {
+        name: "Moto M3X",
+        imageUrl: "src/assets/motom/2c6d5a46cdbceada277c870ce1c389ee.jpg",
+        onClick: function () {
+          loadgame("/src/assets/motom")
+          // Add custom code for Game 2 here
+        },
+      },
+      {
+        name: "Retro Bowl",
+        imageUrl: "/src/assets/retroBowl/img/icon.jpg",
+        onClick: function () {
+          loadgame("/src/assets/retroBowl")
+          // Add custom code for Game 2 here
+        },
+      },
+      {
+        name: "Stickman Hook",
+        imageUrl: "src/assets/stickmanHook/unnamed.jpg",
+        onClick: function () {
+          loadgame("/src/assets/stickmanHook")
+          // Add custom code for Game 2 here
+        },
+      },
+      {
+        name: "Tetris",
+        imageUrl: "/src/assets/tetris/logo.png",
+        onClick: function () {
+          loadgame("/src/assets/tetris")
+          // Add custom code for Game 2 here
+        },
+      },
+      // Add more game objects as needed
+    ];
+
+    function createGameIcons() {
+      const gameIconsContainer = document.querySelector(".games-icons");
+
+      gamesData.forEach((game) => {
+        const gameCard = document.createElement("div");
+        gameCard.classList.add("gamecard");
+
+        const img = document.createElement("img");
+        img.src = game.imageUrl;
+        img.alt = `A picture of ${game.name}`;
+
+        const h2 = document.createElement("h2");
+        h2.textContent = game.name;
+
+        // Add a unique onclick function for each game icon
+        gameCard.onclick = game.onClick;
+
+        gameCard.appendChild(img);
+        gameCard.appendChild(h2);
+
+        gameIconsContainer.appendChild(gameCard);
+      });
+    }
+
+    // Call the function to generate the game icons
+    createGameIcons();
+  </script>
+</body>
+
+</html>

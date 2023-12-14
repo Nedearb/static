@@ -1,0 +1,25 @@
+.gamecard {
+width: 18vw;
+margin: 10px;
+height: 18vw;
+overflow: hidden;
+border-radius: 25px;
+}
+.gamecard > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gamecard > h2 {
+    position: relative;
+    bottom: 40px;
+    text-align: center;
+    color: white;
+    background-color: var(--night);
+    height: 40px;
+}
+.games-icons {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}

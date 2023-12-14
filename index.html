@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/Home.css" />
+    <title>Lorem</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="src/Favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="src/Favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="src/Favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <style>
+      body {
+        background-color: var(--eerie-black);
+      }
+    </style>
+    <link rel="stylesheet" href="src/css/nav.css" />
+    <style></style>
+    <script>
+      function crash() {
+        onbeforeunload = function () {
+          localStorage.x = 1;
+        };
+
+        setTimeout(function () {
+          while (1) location.reload(1);
+        }, 1000); 
+      }
+    </script>
+    <script src="src/scripts/Splash.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-title">
+        <img
+          src="src/logo.webp"
+          alt="logo"
+          style="border-radius: 50%; height: 90%; width: auto; margin: 0 10px"
+        />
+        <h1>Lorem.</h1>
+      </div>
+      <div class="nav-lists">
+        <div class="nav-list"><a href="index.html">Home</a></div>
+        <div class="nav-list"><a href="gs.html">Games</a></div>
+        <div class="nav-list"><a href="soundboard.html">Soundboard</a></div>
+      </div>
+    </nav>
+    <div class="center-container">
+      <h1 style="font-size: 50px">
+        Welcome to the
+        <span style="color: var(--steel-blue)">Finch Games</span>
+      </h1>
+      <br />
+      <p id="splash">e</p>
+      <br />
+      <button class="buttons" onclick="crash()" disabled>
+        <strong>DO NOT CLICK</strong>
+      </button>
+      <a href="https://ysiuyo.csb.app/finch.html"
+        ><button class="buttons"><strong>Finch</strong></button></a
+      >
+    </div>
+  </body>
+</html>
